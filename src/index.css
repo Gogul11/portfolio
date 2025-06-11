@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+
+*{
+  font-family: "Source Code Pro", monospace;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+.ani{
+  animation: dropDown 500ms ease-in-out  1;
+}
+.ani-out{
+  animation: closeDropDown 500ms ease-in-out  1;
+}
+
+.blink{
+  animation: cursor 0.4s infinite ;
+  color: white;
+}
+
+.typeWriter{
+  animation: typing 4s steps(16, end) forwards;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.hi{  display: inline-block;
+  animation: wave 1s infinite;
+}
+
+@keyframes wave {
+  0%, 100%{
+    transform: rotate(-20deg);
+  }
+  50%{
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes typing {
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 16ch;
+    }
+}
+
+
+@keyframes cursor {
+  0%, 100%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 100%;
+  }
+}
+
+@keyframes dropDown {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+@keyframes closeDropDown {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
