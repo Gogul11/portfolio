@@ -6,7 +6,10 @@ import { RiExpandLeftRightFill } from "react-icons/ri";
 import ECA from './pages/eca'
 import Contact from './pages/contact';
 import Resume from './pages/resume';
-
+import {projectDetails} from './utils/projectDetails';
+import Project from './components/project'
+import OnGoing from './pages/onGoing';
+import Loa from './pages/loa';
 
 function App() {
 
@@ -28,10 +31,16 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Scroll to top on page change
+  useEffect(() => {
+      document.querySelector('.content-scroll')?.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pages]);
+
+
   
 
   return (
-    <div className='h-screen flex overflow-hidden'>
+    <div className='h-screen flex '>
       {/* Sidebar - 20% width */}
       <div>
 
@@ -65,11 +74,31 @@ function App() {
       
 
       {/* AboutMe - 80% width */}
-      <div className='flex-1 overflow-y-auto '>
+      <div className='flex-1 overflow-y-auto content-scroll'>
         <div className='max-md:mt-12'>
           {pages === "aboutMe" && <AboutMe/>}
           {pages === "skills" && <Skills/>}
           {pages === "eca" && <ECA/>}
+          {pages.startsWith('project') && (() => {
+            const index = parseInt(pages.replace('project', '')) - 1;
+            const project = projectDetails[index];
+
+           return project ? (
+              <div className="flex  justify-center items-start mt-12 mb-4 min-h-screen">
+                <Project
+                  key={index}
+                  title={project.title}
+                  path={project.path}
+                  repolink={project.repolink}
+                  liveurl={project.liveurl}
+                  content={project.content}
+                />
+              </div>
+            ) : null;
+
+          })()}
+          {pages === 'ongoingProjects' && <OnGoing/>}
+          {pages === 'loa' && <Loa/>}
           {pages === "contact" && <Contact/>}
           {pages === "resume" && <Resume/>}
         </div>

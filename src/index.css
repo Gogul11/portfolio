@@ -10,13 +10,33 @@
 body{
   background-color: black;
   color: white;
+  /* cursor: url('/public/exitor.png'), auto; */
 }
 
 .ani{
   animation: dropDown 500ms ease-in-out  1;
 }
+
+@keyframes dropDown {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
 .ani-out{
   animation: closeDropDown 500ms ease-in-out  1;
+}
+
+@keyframes closeDropDown {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
 }
 
 .blink{
@@ -24,11 +44,29 @@ body{
   color: white;
 }
 
+@keyframes cursor {
+  0%, 100%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 100%;
+  }
+}
+
 .typeWriter{
   animation: typing 4s steps(16, end) forwards;
   width: 0;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@keyframes typing {
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 16ch;
+    }
 }
 
 
@@ -45,39 +83,20 @@ body{
   }
 }
 
-@keyframes typing {
-    0%{
-      width: 0px;
-    }
-    100%{
-      width: 16ch;
-    }
+.highLight {
+  animation: growAndShrink 2s ease-in-out infinite;
 }
 
+@keyframes growAndShrink {
+  0%, 100% {
+    transform: scale(0.5);
+    box-shadow: 0 0 0 rgba(255, 255, 0, 0.7);
 
-@keyframes cursor {
-  0%, 100%{
-    opacity: 0;
   }
-  50%{
-    opacity: 100%;
+  50% {
+    transform: scale(0.8);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.8);
+
   }
 }
 
-@keyframes dropDown {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-}
-
-@keyframes closeDropDown {
-    0%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
-}

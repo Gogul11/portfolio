@@ -1,4 +1,5 @@
 import React from 'react';
+import { LuLink } from "react-icons/lu";
 
 const Contact = () => {
   return (
@@ -27,9 +28,10 @@ const Contact = () => {
             href="https://github.com/Gogul11"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#ce9178] break-all"
+            className="text-[#ce9178] break-all flex gap-2"
           >
-            "https://github.com/Gogul11"
+            <LuLink color='gray'/>
+            View repo
           </a>,
         </div>
 
@@ -39,9 +41,10 @@ const Contact = () => {
             href="https://www.linkedin.com/in/gogul11"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#ce9178] break-all"
+            className="text-[#ce9178] break-all flex gap-2"
           >
-            "https://www.linkedin.com/in/gogul11"
+            <LuLink color='gray'/>
+            View profile
           </a>,
         </div>
 
@@ -51,9 +54,23 @@ const Contact = () => {
             href="https://leetcode.com/u/Gogul11/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#ce9178] break-all"
+            className="text-[#ce9178] break-all flex gap-2"
           >
-            "https://leetcode.com/u/Gogul11/"
+            <LuLink color='gray'/>
+            View Conquest
+          </a>,
+        </div>
+
+        <div className="flex flex-wrap">
+          <span className="text-[#9cdcfe]">"Frontend Mentor"</span>:&nbsp;
+          <a
+            href="https://leetcode.com/u/Gogul11/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ce9178] break-all flex gap-2"
+          >
+            <LuLink color='gray'/>
+            View Profile
           </a>,
         </div>
       </div>
