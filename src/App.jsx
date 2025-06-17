@@ -10,6 +10,7 @@ import {projectDetails} from './utils/projectDetails';
 import Project from './components/project'
 import OnGoing from './pages/onGoing';
 import Loa from './pages/loa';
+import IconCarousel from './components/Animation';
 
 function App() {
 
@@ -74,8 +75,11 @@ function App() {
       
 
       {/* AboutMe - 80% width */}
-      <div className='flex-1 overflow-y-auto content-scroll'>
-        <div className='max-md:mt-12'>
+      <div className='flex-1 overflow-y-auto content-scroll flex-colmd:w-[80%]  w-full'>
+        <div className='md:fixed md:top-8 md:left-[20%] md:w-[80%] z-10 max-md:mt-4'>
+          <IconCarousel />
+        </div>
+        <div className='mt-6 md:mt-[120px]'>
           {pages === "aboutMe" && <AboutMe/>}
           {pages === "skills" && <Skills/>}
           {pages === "eca" && <ECA/>}
@@ -102,6 +106,7 @@ function App() {
           {pages === "contact" && <Contact/>}
           {pages === "resume" && <Resume/>}
         </div>
+        
       </div>
 </div>
 

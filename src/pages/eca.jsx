@@ -18,9 +18,6 @@ export default function ECA() {
 
   return (
     <div className="w-full max-w-4xl mx-auto mt-10 p-4 font-mono text-sm ani">
-      <h2 className="text-3xl font-bold text-white text-center mb-8">
-        📋 Achievements & Extra-Curricular Activities
-      </h2>
 
       {/* Achievements Block */}
       <div className="mb-10">

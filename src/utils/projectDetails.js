@@ -28,8 +28,8 @@ content: "A full-stack Git branching and commit visualization simulator aimed at
 
 const ongoingProjects = [
   {
-    title: 'Linux Lab IDE',
-    desc: 'Custom IDE with integrated terminal for lab and group collaboration',
+    title: 'labX',
+    desc: 'Collabrative IDE for lab exams',
     width: 15,
   },
   {

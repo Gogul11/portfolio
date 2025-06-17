@@ -45,15 +45,14 @@ const Skills = () => {
   const [activeSection, setActiveSection] = useState(skillSections[0]);
 
   return (
-    <div className="w-full max-w-4xl mx-auto mt-10 p-4 font-mono text-sm ani flex max-md:flex-col">
+    <div className="w-full max-w-4xl mx-auto mt-10 p-4 font-mono text-sm ani flex flex-col md:flex-row gap-4">
       <div className="flex flex-col space-y-4 mb-6 md:w-[30%]">
         {skillSections.map((section) => (
             <div className='flex'>
-                {/* <p>{'|---->'}</p> */}
                 <button
                     key={section.id}
                     onClick={() => setActiveSection(section)}
-                    className={`px-4 py-1 rounded-full border text-sm font-medium transition-all cursor-pointer
+                    className={`px-2 py-1 rounded-full border text-sm font-medium transition-all cursor-pointer
                         ${activeSection.id === section.id
                             ? `${section.titleColor} bg-white/10 border-white`
                             : 'text-gray-300 border-gray-500 hover:bg-white/5'}`}
