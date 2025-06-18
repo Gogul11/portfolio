@@ -1,4 +1,5 @@
 import React from 'react';
+// import IconCarousel from '../components/Animation';
 
 const AboutMe = () => {
     return (
@@ -8,7 +9,7 @@ const AboutMe = () => {
                 <p 
                     className='text-white md:text-4xl typeWriter text-3xl'
                 >
-                    <span className='hi'>👋</span>Hi I am <span className='text-blue-400'>Gogul</span>,
+                    <span className='hi'>👋</span>Hi I am <span className='text-vivid-purple'>Gogul</span>,
                 </p>
                 <p className='text-white text-3xl blink'>|</p>
                 
@@ -40,6 +41,7 @@ const AboutMe = () => {
                     I'm driven by a desire to learn continuously, collaborate meaningfully, and build impactful software.
                 </p>
             </div>
+            {/* <IconCarousel/> */}
 
         </div>
     );

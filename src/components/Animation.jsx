@@ -1,14 +1,14 @@
 import React from 'react';
 import { skills } from '../utils/icons';
 
-const IconCarousel = () => {
+const IconCarouselVertical = () => {
   return (
-    <div className="w-full px-2 overflow-hidden">
-      <div className="flex animate-scroll-left">
+    <div className="px-2 overflow-hidden h-[100vh]">
+      <div className="flex animate-scroll-top flex-col">
         {[...skills, ...skills, ...skills].map((item, idx) => (
           <div
             key={idx}
-            className={`flex-shrink-0 mx-8 flex items-center justify-center text-blue-700 transition-transform hover:scale-110 duration-300`}
+            className="flex-shrink-0 my-8 text-blue-700"
           >
             <div className="text-4xl">{item.icon}</div>
           </div>
@@ -18,4 +18,21 @@ const IconCarousel = () => {
   );
 };
 
-export default IconCarousel;
+const IconCarouselHorizontal = () => {
+  return (
+    <div className="px-2 overflow-hidden">
+      <div className="flex animate-scroll-left">
+        {[...skills, ...skills, ...skills].map((item, idx) => (
+          <div
+            key={idx}
+            className="flex-shrink-0 mx-8 text-blue-700"
+          >
+            <div className="text-4xl">{item.icon}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export { IconCarouselVertical, IconCarouselHorizontal };

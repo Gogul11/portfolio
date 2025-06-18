@@ -10,7 +10,7 @@ import {projectDetails} from './utils/projectDetails';
 import Project from './components/project'
 import OnGoing from './pages/onGoing';
 import Loa from './pages/loa';
-import IconCarousel from './components/Animation';
+import {IconCarouselHorizontal, IconCarouselVertical} from './components/Animation';
 
 function App() {
 
@@ -41,10 +41,10 @@ function App() {
   
 
   return (
-    <div className='h-screen flex '>
+    <div className='h-screen flex'>
+
       {/* Sidebar - 20% width */}
       <div>
-
         {windowSize >= 768 &&
           <div className='w-[100%] h-full flex items-center'>
             <Sidebar setCurrentPage={setPages}/>
@@ -73,13 +73,14 @@ function App() {
           </div>
         )}
       
-
-      {/* AboutMe - 80% width */}
-      <div className='flex-1 overflow-y-auto content-scroll flex-colmd:w-[80%]  w-full'>
-        <div className='md:fixed md:top-8 md:left-[20%] md:w-[80%] z-10 max-md:mt-4'>
-          <IconCarousel />
-        </div>
-        <div className='mt-6 md:mt-[120px]'>
+      {/* content */}
+      <div className='flex-1 overflow-y-auto content-scroll scrollbar-none'>
+        {windowSize < 768 && (
+           <div className='mt-6'>
+                <IconCarouselHorizontal/>
+           </div>
+        )}
+        <div className='max-md:mt-12'>
           {pages === "aboutMe" && <AboutMe/>}
           {pages === "skills" && <Skills/>}
           {pages === "eca" && <ECA/>}
@@ -108,6 +109,12 @@ function App() {
         </div>
         
       </div>
+
+      {windowSize >= 768 && 
+        <div className='mr-4 h-full'>
+          <IconCarouselVertical/>
+        </div>
+      }
 </div>
 
   )
