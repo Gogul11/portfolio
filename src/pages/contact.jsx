@@ -6,7 +6,7 @@ import { iconLinks } from '../utils/links';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center p-6 md:mt-12">
+    <div className="min-h-screen flex flex-col items-center p-6 md:mt-12 ani">
       {iconLinks.map(({ label, href, display }, index) => (
         <React.Fragment key={label}>
           <a
