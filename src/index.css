@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --color-midnight: oklch(0.1135 0.041 300.65);       /* #070211 */
-  --color-dark-violet: oklch(0.2073 0.1063 298.67);   /* #200240 */
-  --color-deep-indigo: oklch(0.2533 0.1363 296.38);   /* #2c015a */
-  --color-purple-night: oklch(0.3081 0.1667 295.24);  /* #3b0278 */
-  --color-vivid-purple: oklch(0.3649 0.2007 294.05);  /* #4b019a */
-}
-
 
 *{
   font-family: "Source Code Pro", monospace;
   box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+  /* cursor: url('/public/exitor.png'), auto; */
 }
 
 .scrollbar-none {

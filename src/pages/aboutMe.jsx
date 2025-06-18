@@ -9,7 +9,7 @@ const AboutMe = () => {
                 <p 
                     className='text-white md:text-4xl typeWriter text-3xl'
                 >
-                    <span className='hi'>👋</span>Hi I am <span className='text-vivid-purple'>Gogul</span>,
+                    <span className='hi'>👋</span>Hi I am <span className='text-blue-600'>Gogul</span>,
                 </p>
                 <p className='text-white text-3xl blink'>|</p>
                 
@@ -21,12 +21,12 @@ const AboutMe = () => {
                     <a 
                         href="https://www.auegov.ac.in/Department/ist" 
                         target='blank'
-                        className='text-green-400 inline-block'
+                        className='text-vivid-purple inline-block'
                     >B.Tech Information Technology </a> 
                     student at the<a 
                         href="https://ceg.annauniv.edu/dept.html" 
                         target='blank'
-                        className='text-orange-200 inline-block'
+                        className='text-vivid-purple inline-block'
                     >College of Engineering, Guindy</a>(2023-2027), 
                     with a strong interest in system-level development and full-stack web technologies. </p>
 
