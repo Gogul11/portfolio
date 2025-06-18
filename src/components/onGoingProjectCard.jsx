@@ -9,7 +9,7 @@ const OnGoingProjectCard = ({width, title, desc}) => {
                 <div className='flex flex-col w-[80%]'>
                     <div>
                         <p
-                            className='text-2xl font-bold'
+                            className='text-2xl font-bold text-indigo-600'
                         >{title}</p>
                     </div>
 

@@ -8,7 +8,7 @@ const IconCarouselVertical = () => {
         {[...skills, ...skills, ...skills].map((item, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 my-8 text-blue-700"
+            className="flex-shrink-0 my-8 text-indigo-700"
           >
             <div className="text-4xl">{item.icon}</div>
           </div>
@@ -25,7 +25,7 @@ const IconCarouselHorizontal = () => {
         {[...skills, ...skills, ...skills].map((item, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 mx-8 text-blue-700"
+            className="flex-shrink-0 mx-8 text-indigo-700"
           >
             <div className="text-4xl">{item.icon}</div>
           </div>

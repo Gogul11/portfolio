@@ -54,23 +54,30 @@ function App() {
       </div>
 
         {windowSize < 768 && (
-          <div className='fixed top-[50%]  z-40 text-white bg-amber-400 rounded-2xl ml-2'>
-            <RiExpandLeftRightFill 
-              size='32' 
-              onClick={() => setSide(!side)}
-            />
+          <>
 
-            {
-              side && (
-                <div className='fixed z-30 w-[100%] top-[50%] left-[50%] transform -translate-x-1/3 -translate-y-1/2 '>
-                  <Sidebar setCurrentPage={(page) => {
-                    setPages(page)
-                    setSide(false) 
-                  }} />
-                </div>
-              )
-          }
-          </div>
+            {side && (
+              <div className="fixed inset-0 z-20 backdrop-blur-sm bg-black/30 transition duration-300"></div>
+            )}
+            <div className='fixed top-[50%]  z-40 text-white bg-indigo-700 rounded-2xl ml-2'>
+              <RiExpandLeftRightFill 
+                size='30' 
+                onClick={() => setSide(!side)}
+              />
+
+              {
+                side && (
+                  <div className='fixed z-30 w-[100%] top-[50%] left-[50%] transform -translate-x-1/3 -translate-y-1/2 '>
+                    <Sidebar setCurrentPage={(page) => {
+                      setPages(page)
+                      setSide(false) 
+                    }} />
+                  </div>
+                )
+            }
+            </div>
+          </>
+
         )}
       
       {/* content */}

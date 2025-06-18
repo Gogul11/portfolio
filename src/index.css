@@ -8,11 +8,17 @@
 }
 
 body{
-  background-color: black;
+  background: radial-gradient(circle at 20% 20%, #312c85 0%, black 40%, black 100%);
   color: white;
-  /* cursor: url('/public/exitor.png'), auto; */
 }
 
+/* 1e1a4d */
+
+/* #312c85 */
+
+/* #101828 */
+
+/* //#1e2939 */
 .scrollbar-none {
   scrollbar-width: none; 
   -ms-overflow-style: none; 
@@ -136,4 +142,10 @@ body{
 .animate-scroll-left {
   animation: scroll-left 20s linear infinite;
   width: max-content;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: radial-gradient(circle at 80% 80%, #312c85 0%, black 40%, black 100%);
+  }
 }

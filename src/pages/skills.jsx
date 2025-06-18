@@ -12,31 +12,31 @@ const skillSections = [
   {
     id: 'programming',
     title: 'Programming Languages',
-    titleColor: 'text-green-500',
+    titleColor: 'text-indigo-600',
     items: programmingLanguages,
   },
   {
     id: 'frameworks',
     title: 'Frameworks & Libraries',
-    titleColor: 'text-blue-500',
+    titleColor: 'text-indigo-600',
     items: frameworksAndLibraries,
   },
   {
     id: 'techstacks',
     title: 'Tech Stacks',
-    titleColor: 'text-yellow-500',
+    titleColor: 'text-indigo-600',
     items: techStacks,
   },
   {
     id: 'tools',
     title: 'Tools',
-    titleColor: 'text-red-500',
+    titleColor: 'text-indigo-600',
     items: toolsAndPlatforms,
   },
   {
     id: 'os',
     title: 'Operating Systems',
-    titleColor: 'text-purple-500',
+    titleColor: 'text-indigo-600',
     items: operatingSystems,
   },
 ];

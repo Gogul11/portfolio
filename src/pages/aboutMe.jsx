@@ -9,24 +9,22 @@ const AboutMe = () => {
                 <p 
                     className='text-white md:text-4xl typeWriter text-3xl'
                 >
-                    <span className='hi'>👋</span>Hi I am <span className='text-blue-600'>Gogul</span>,
+                    <span className='hi'>👋</span>Hi I am <span className='text-indigo-700'>Gogul</span>,
                 </p>
                 <p className='text-white text-3xl blink'>|</p>
-                
             </div>
-
+            
             <div>
                 <p className='text-white md:text-xl text-lg'><br />
-                    I'm a passionate and curious 
-                    <a 
+                    I'm a passionate and curious <a 
                         href="https://www.auegov.ac.in/Department/ist" 
                         target='blank'
-                        className='text-vivid-purple inline-block'
-                    >B.Tech Information Technology </a> 
-                    student at the<a 
+                        className='text-indigo-600 inline-block'
+                    >B.Tech Information Technology
+                    </a> student at the <a 
                         href="https://ceg.annauniv.edu/dept.html" 
                         target='blank'
-                        className='text-vivid-purple inline-block'
+                        className='text-indigo-600 inline-block'
                     >College of Engineering, Guindy</a>(2023-2027), 
                     with a strong interest in system-level development and full-stack web technologies. </p>
 

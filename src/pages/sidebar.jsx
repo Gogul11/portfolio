@@ -11,16 +11,16 @@ const Sidebar = ({setCurrentPage}) => {
     const[showProjects, setShowProjects] = useState(false)
 
 
-    const sideBarContentStyles = 'flex w-[100%] focus:bg-white/20 hover:bg-white/10 cursor-pointer p-1'
-    const projectStyles = 'flex w-[100%] pl-8 focus:bg-white/20 py-1 hover:bg-white/10 cursor-pointer'
+    const sideBarContentStyles = 'flex w-[100%] focus:bg-white/20 hover:bg-white/10 cursor-pointer p-2'
+    const projectStyles = 'flex w-[100%] pl-8 focus:bg-white/20 py-2 hover:bg-white/10 cursor-pointer'
 
     const fields = getFields(setCurrentPage)
     const projectFields = getProjectFields(setCurrentPage)
 
     return (
         <div 
-            className='bg-gray-900 w-[70%] md:h-[95vh] flex flex-col py-4 md:w-[250px] lg:w-[350px]
-                        rounded-[20px] ml-4 border-1 border-white ani max-md:overflow-auto max-md:max-h-[500px]'>
+            className='bg-gray-900/50 w-[70%] md:h-[95vh] flex flex-col py-4 md:w-[250px] lg:w-[350px]
+                        rounded-[20px] ml-4 border-1 border-gray-600 ani max-md:overflow-auto max-md:max-h-[500px] scrollbar-none'>
 
             
             {fields.map((item, index) => (

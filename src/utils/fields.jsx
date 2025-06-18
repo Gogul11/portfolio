@@ -4,6 +4,7 @@ import { PiHash } from "react-icons/pi";
 import { FaFilePdf } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { SiEthereum } from "react-icons/si";
+import { SiSolidity } from "react-icons/si";
 
 const getFields = (setCurrentPage) => [
     {
@@ -23,8 +24,8 @@ const getFields = (setCurrentPage) => [
     },
     {
         func : () => setCurrentPage("contact"),
-        icon : <PiBracketsCurlyLight color='#f2f23a' size={30} />,
-        title : 'Contact.json'
+        icon : <SiSolidity color='#e4e1f2' size={30} />,
+        title : 'Contact.sol'
     },
     {
         func : () => setCurrentPage("resume"),
@@ -33,7 +34,7 @@ const getFields = (setCurrentPage) => [
     },
     {
         func : () => setCurrentPage("loa"),
-        icon : <SiEthereum  size={28} color="gray"/>,
+        icon : <SiEthereum  size={30} color="gray"/>,
         title : 'Letter of Appreciations'
     },
 ]

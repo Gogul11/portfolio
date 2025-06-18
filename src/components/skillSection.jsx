@@ -9,7 +9,7 @@ const SkillSection = ({ title, titleColor, items }) => {
       <ul className="space-y-3 list-disc pl-5">
         {items.map((item, index) => (
           <li key={index} className="text-base md:text-lg">
-            <strong>{item.title}:</strong> {item.description}
+            <strong className="text-indigo-600">{item.title}:</strong> {item.description}
           </li>
         ))}
       </ul>

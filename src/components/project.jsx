@@ -3,7 +3,7 @@ import React from 'react';
 const Project = (props) => {
     return (
         <div
-            className='bg-white/10 w-[90%] rounded-2xl p-4 flex flex-col justify-center items-center md:w-[80%] lg:w-[50%] md:p-6 ani'
+            className='bg-white/10 w-[90%] rounded-2xl p-4 flex flex-col justify-center items-center  md:p-6 ani'
         >
             {/* image */}
             <div>
@@ -15,17 +15,17 @@ const Project = (props) => {
 
             {/* content */}
             <div className='flex flex-col'>
-                <p className='text-2xl font-semibold m-2'>{props.title}</p>
+                <p className='text-2xl text-indigo-600 font-semibold m-2'>{props.title}</p>
                 <a 
                     href={props.repolink}
                     target='_blank'
-                    className='m-2 text-green-500'
+                    className='m-2 text-blue-600'
                 >Repo link</a>
                 {props.liveurl &&
                     <a 
                     href={props.liveurl}
                     target='_blank'
-                    className='m-2 text-blue-500'
+                    className='m-2 text-blue-600'
                     >Visit</a>
                 }
                 <p className='text-md font-light m-2'>{props.content}</p>

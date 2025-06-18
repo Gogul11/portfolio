@@ -21,10 +21,10 @@ export default function ECA() {
 
       {/* Achievements Block */}
       <div className="mb-10">
-        <h3 className="text-xl text-white font-semibold mb-4">🏅 Achievements</h3>
+        <h3 className="text-2xl text-indigo-600 font-bold mb-4">Achievements</h3>
         <div className="space-y-4">
           {achievements.map((item, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <div key={index} className="bg-gray-800/50 rounded-lg shadow-md overflow-hidden">
               <button
                 onClick={() => toggleAchievement(index)}
                 className="w-full px-4 py-3 text-left text-white font-medium text-base cursor-pointer"
@@ -33,10 +33,10 @@ export default function ECA() {
               </button>
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  openAchievement === index ? " p-4 bg-gray-200 text-black" : "max-h-0"
+                  openAchievement === index ? " p-4 bg-indigo-200/50 text-black" : "max-h-0"
                 }`}
               >
-                <p className={`text-black ${item.pdfUrl && 'mb-4'}`}>{item.detail}</p>
+                <p className={`text-black font-mono text-md ${item.pdfUrl && 'mb-4'}`}>{item.detail}</p>
                 {item.pdfUrl && 
                   <iframe
                     src={item.pdfUrl}
@@ -52,10 +52,10 @@ export default function ECA() {
 
       {/* Extra-Curricular Block */}
       <div>
-        <h3 className="text-xl text-white font-semibold mb-4">🎯 Extra-Curricular Activities</h3>
+        <h3 className="text-2xl text-indigo-600 font-bold mb-4">Extra-Curricular Activities</h3>
         <div className="space-y-4">
           {extraCurriculars.map((item, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden ">
+            <div key={index} className="bg-gray-800/50 rounded-lg shadow-md overflow-hidden ">
               <button
                 onClick={() => toggleECA(index)}
                 className="w-full px-4 py-3 text-left text-white font-medium text-base cursor-pointer"
