@@ -3,10 +3,10 @@ import React from 'react';
 const Project = (props) => {
     return (
         <div
-            className='bg-white/10 w-[90%] rounded-2xl p-4 flex flex-col justify-center items-center  md:p-6 ani'
+            className='bg-white/10 w-[90%] rounded-2xl p-4 flex flex-col justify-center items-center lg:w-[60%] md:w-[70%]  md:p-6 ani'
         >
             {/* image */}
-            <div>
+            <div className="w-full flex justify-center">                
                 <img
                     className='rounded-2xl m-2 md:m-4 h-[250px] w-[250px] md:h-[300px] md:w-[400px]' 
                     src={props.path} 

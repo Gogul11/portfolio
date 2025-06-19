@@ -59,8 +59,7 @@ const Sidebar = ({setCurrentPage}) => {
             </button>
             <div>
                 {projects && 
-                    <div className={showProjects ? 'ani' : 'ani-out'}>
-                        <ul className='text-white flex flex-col gap-2 '>
+                    <div className={`max-h-[300px] overflow-auto ${showProjects ? 'ani' : 'ani-out'}`}>                        <ul className='text-white flex flex-col gap-2 '>
                             {projectFields.map((item, index) => (
                                 <li key={index}>
                                     <button className={projectStyles} onClick={item.func}>
