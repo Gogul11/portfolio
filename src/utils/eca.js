@@ -6,12 +6,12 @@ const achievements = [
     {
         title: "NPTEL exam",
         detail: "Secured 82% in NPTEL's Python for Data Science course.",
-        pdfUrl : 'portfolio/ecaPdf/nptel.pdf'
+        pdfUrl : '/portfolio/ecaPdf/nptel.pdf'
     },
     {
         title: "Synthetix 3.0",
         detail: "Participated in our first hackathon Synthetix 3.0 conducted by VIT Chennai.",
-        pdfUrl : "portfolio/ecaPdf/synthetix.pdf"
+        pdfUrl : "/portfolio/ecaPdf/synthetix.pdf"
     },
 ];
 
@@ -23,7 +23,7 @@ const extraCurriculars = [
     {
         title: "TechOps Coordinator",
         detail: "Tech-ops Coordinator at CEG Tech Forum (2024-2025).",
-        pdfUrl : 'portfolio/ecaPdf/ctfAppointment.pdf'
+        pdfUrl : '/portfolio/ecaPdf/ctfAppointment.pdf'
     },
     {
         title: "Technical Team POC",
