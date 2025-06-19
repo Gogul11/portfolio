@@ -1,5 +1,10 @@
 const LoaPdfFiles = [
   {
+    title: "Full Stack Development Internship",
+    desc: "Completed a virtual internship in Full Stack Web Development, gaining hands-on experience with React, Node.js, Express, and MongoDB through real-world projects.",
+    pdfUrl: "/loaPdf/VIntern.pdf"
+  },
+  {
     title: "Web Dev Volunteer - I++'24 & ITRix'25",
     desc: "Letter of Appreciation for volunteering in the Web Development team for I++'24 and ITRix'25, contributing to design, on-day coordination, and online platform development.",
     pdfUrl : '/loaPdf/istaloa.pdf'
@@ -14,6 +19,7 @@ const LoaPdfFiles = [
     desc: "Letter of Appreciation for serving as a TechOps Coordinator during Kurukshetra’25, CEG's international techno-management fest.",
     pdfUrl : '/loaPdf/k25loa.pdf'
   },
+
 ];
 
 export {LoaPdfFiles};
