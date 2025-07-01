@@ -1,5 +1,11 @@
 const projectDetails = [
   {
+    title: 'Portfolio',
+    path: '/portfolio/projectsImg/portfolio.png',
+    repolink: 'https://github.com/Gogul11/portfolio',
+    content: "My personal portfolio is a creative project built entirely from scratch using React (JSX) and Tailwind CSS. When I started, I had no fixed design in mind — I just knew I wanted it to be different. Inspired by the layout of Visual Studio Code, I designed the interface to feel like a developer's workspace: the sidebar mimics file tabs such as aboutme.docker, skills.css, eca.jsx, resume.pdf, letter of appreciations, and contact.sol, with each file representing a section of my profile.The projects section is presented like a folder structure, and a custom carousel highlights the various tools, languages, and technologies I've used — all represented with meaningful icons. Choosing the theme was the hardest part. After experimenting with several color palettes, I finally settled on a style inspired by Marvel's Black Panther, using black and indigo as primary tones to create a bold, techy aesthetic.This portfolio is more than just a site — it reflects how I think as a developer and designer. And if you have suggestions or feedback, feel free to message me (you can get my social media contacts in the contact section) — I'd love to hear from you!"
+  },
+  {
     title: 'Exitor',
     path: '/portfolio/projectsImg/exitor.png',
     repolink: 'https://github.com/Gogul11/Exitor',
@@ -30,7 +36,7 @@ const ongoingProjects = [
   {
     title: 'labX',
     desc: 'Collabrative IDE for lab exams',
-    width: 15,
+    width: 55,
   },
   {
     title: 'Transfer Now',
