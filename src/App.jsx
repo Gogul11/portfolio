@@ -11,13 +11,24 @@ import Project from './components/project'
 import OnGoing from './pages/onGoing';
 import Loa from './pages/loa';
 import {IconCarouselHorizontal, IconCarouselVertical} from './components/Animation';
+import { useLocation } from 'react-router';
 
 function App() {
 
   const[side, setSide] = useState(false)
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
+  const location = useLocation()
+
   const[pages, setPages] = useState("aboutMe")
+
+  useEffect(() => {
+      const hash = location.hash.replace('#', '');
+      if (hash) {
+        setPages(hash);
+      }
+  }, [location]);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -87,33 +98,54 @@ function App() {
                 <IconCarouselHorizontal/>
            </div>
         )}
-        <div className='max-md:mt-12'>
-          {pages === "aboutMe" && <AboutMe/>}
-          {pages === "skills" && <Skills/>}
-          {pages === "eca" && <ECA/>}
-          {pages.startsWith('project') && (() => {
-            const index = parseInt(pages.replace('project', '')) - 1;
-            const project = projectDetails[index];
+      <div className="max-md:mt-12">
+          {(() => {
+            switch (true) {
+              case pages === "aboutMe":
+                return <AboutMe />;
 
-           return project ? (
-              <div className="flex  justify-center items-start mt-12 mb-4 min-h-screen">
-                <Project
-                  key={index}
-                  title={project.title}
-                  path={project.path}
-                  repolink={project.repolink}
-                  liveurl={project.liveurl}
-                  content={project.content}
-                />
-              </div>
-            ) : null;
+              case pages === "skills":
+                return <Skills />;
 
+              case pages === "eca":
+                return <ECA />;
+
+              case pages.startsWith("project"): {
+                const index = parseInt(pages.replace("project", "")) - 1;
+                const project = projectDetails[index];
+
+                return project ? (
+                  <div className="flex justify-center items-start mt-12 mb-4 min-h-screen">
+                    <Project
+                      key={index}
+                      title={project.title}
+                      path={project.path}
+                      repolink={project.repolink}
+                      liveurl={project.liveurl}
+                      content={project.content}
+                    />
+                  </div>
+                ) : null;
+              }
+
+              case pages === "ongoingProjects":
+                return <OnGoing />;
+
+              case pages === "loa":
+                return <Loa />;
+
+              case pages === "contact":
+                return <Contact />;
+
+              case pages === "resume":
+                return <Resume />;
+
+              default:
+                return null;
+            }
           })()}
-          {pages === 'ongoingProjects' && <OnGoing/>}
-          {pages === 'loa' && <Loa/>}
-          {pages === "contact" && <Contact/>}
-          {pages === "resume" && <Resume/>}
-        </div>
+      </div>
+
         
       </div>
 
