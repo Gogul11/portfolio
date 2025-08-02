@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { achievements, extraCurriculars } from "../utils/eca";
+import { GiAnchor } from "react-icons/gi";
 
 export default function ECA() {
   const [openAchievement, setOpenAchievement] = useState(null);
@@ -33,10 +34,20 @@ export default function ECA() {
               </button>
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  openAchievement === index ? " p-4 bg-indigo-200/50 text-black" : "max-h-0"
+                  openAchievement === index ? " p-4 bg-gray-200 text-black" : "max-h-0"
                 }`}
               >
                 <p className={`text-black font-mono text-md ${item.pdfUrl && 'mb-4'}`}>{item.detail}</p>
+                {item.link && 
+                  <div className="flex items-center gap-2 text-md underline text-blue-500">
+                    <GiAnchor />
+                    <a 
+                      href={item.link} 
+                      target="_blank"
+                      className={`font-mono text-md ${item.pdfUrl ? 'my-2 block' : ''}`}
+                    >View solution</a>
+                  </div>
+                  }
                 {item.pdfUrl && 
                   <iframe
                     src={item.pdfUrl}

@@ -2,6 +2,7 @@ const achievements = [
     {
         title: "SDJ Winner",
         detail: "Secured 1st place in the Service Design Jam conducted by BNY Mellon at Kurukshetra'25.",
+        link : 'https://sdj-25.vercel.app/'
     },
     {
         title: "NPTEL exam",
@@ -11,7 +12,8 @@ const achievements = [
     {
         title: "Synthetix 3.0",
         detail: "Participated in our first hackathon Synthetix 3.0 conducted by VIT Chennai.",
-        pdfUrl : "/portfolio/ecaPdf/synthetix.pdf"
+        pdfUrl : "/portfolio/ecaPdf/synthetix.pdf",
+        link : 'https://cropcare-sepia.vercel.app/'
     },
 ];
 
