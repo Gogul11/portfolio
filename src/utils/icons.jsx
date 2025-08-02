@@ -6,6 +6,7 @@ import {
   SiFigma,
   SiUbuntu, SiTails, SiKalilinux
 } from 'react-icons/si';
+import { FaJava } from "react-icons/fa";
 
 import { FaWindows } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
@@ -16,6 +17,7 @@ const skills = [
   { icon: <SiPython /> },
   { icon: <SiPostgresql /> },
   { icon: <SiSolidity /> },
+  { icon : <FaJava />},
   { icon: <SiReact /> },
   { icon: <SiNodedotjs /> },
   { icon: <SiExpress /> },

@@ -5,6 +5,8 @@ import { FaFilePdf } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { SiEthereum } from "react-icons/si";
 import { SiSolidity } from "react-icons/si";
+import OngoingAnimation from "../components/ongoingAnimation";
+
 
 const getFields = (setCurrentPage) => [
     {
@@ -37,6 +39,11 @@ const getFields = (setCurrentPage) => [
         icon : <SiEthereum  size={30} color="gray"/>,
         title : 'Letter of Appreciations'
     },
+    {
+        func : () => setCurrentPage("ongoingProjects"),
+        icon : <OngoingAnimation/>,
+        title : 'Ongoing Projects'
+    }
 ]
 
 export default getFields;

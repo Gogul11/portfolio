@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { achievements, extraCurriculars } from "../utils/eca";
 import { GiAnchor } from "react-icons/gi";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 export default function ECA() {
   const [openAchievement, setOpenAchievement] = useState(null);
@@ -30,7 +32,13 @@ export default function ECA() {
                 onClick={() => toggleAchievement(index)}
                 className="w-full px-4 py-3 text-left text-white font-medium text-base cursor-pointer"
               >
-                {item.title}
+                <div className='flex items-center gap-2'>
+                  {openAchievement !== index ? 
+                    <MdOutlineKeyboardDoubleArrowDown size={20}/> : 
+                    <MdKeyboardDoubleArrowUp size={20}/>
+                  }
+                  {item.title}
+                </div>
               </button>
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
@@ -71,7 +79,13 @@ export default function ECA() {
                 onClick={() => toggleECA(index)}
                 className="w-full px-4 py-3 text-left text-white font-medium text-base cursor-pointer"
               >
-                {item.title}
+                <div className='flex items-center gap-2'>
+                  {openECA !== index ? 
+                    <MdOutlineKeyboardDoubleArrowDown size={20}/> : 
+                    <MdKeyboardDoubleArrowUp size={20}/>
+                  }
+                  {item.title}
+                </div>
               </button>
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${

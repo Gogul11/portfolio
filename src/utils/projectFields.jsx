@@ -3,8 +3,6 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
 import { BsStack } from "react-icons/bs";
 import { SiReact } from "react-icons/si";
-import OngoingAnimation from "../components/ongoingAnimation";
-
 
 const getProjectsFields = (setCurrentPage) => [
     {
@@ -31,11 +29,6 @@ const getProjectsFields = (setCurrentPage) => [
         func: () => setCurrentPage("project5"),
         icon: <BsStack className='mt-1' size={18} color='green' />,
         title: 'SuperMarket Billing System'
-    },
-    {
-        func : () => setCurrentPage("ongoingProjects"),
-        icon : <OngoingAnimation/>,
-        title : 'Ongoing Projects'
     }
 ];
 

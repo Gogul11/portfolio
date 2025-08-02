@@ -35,12 +35,12 @@ const projectDetails = [
 const ongoingProjects = [
   {
     title: 'labX',
-    desc: 'Collabrative IDE for lab exams',
-    width: 55,
+    desc: 'Collabrative IDE for lab exams. About to be deployed',
+    width: 85,
   },
   {
-    title: 'Transfer Now',
-    desc: 'A QR based file sharing system',
+    title: 'Oriyam',
+    desc: 'Land rental and lease system with blockchain',
     width: 10,
   },
   {

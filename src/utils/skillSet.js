@@ -1,3 +1,4 @@
+import { title } from "framer-motion/client";
 
 const programmingLanguages = [
   {
@@ -20,6 +21,11 @@ const programmingLanguages = [
     title: 'Solidity',
     description: 'Beginner-level understanding. Capable of writing basic smart contracts for the Ethereum blockchain.',
   },
+  {
+    title: 'Java',
+    description: 'Beginner-level understanding. Currently learning the fundamentals of object-oriented programming and core Java concepts.',
+  }
+
 ];
 
 const frameworksAndLibraries = [
