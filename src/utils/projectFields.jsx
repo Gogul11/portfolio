@@ -3,8 +3,14 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
 import { BsStack } from "react-icons/bs";
 import { SiReact } from "react-icons/si";
+import { ImHtmlFive } from "react-icons/im";
 
 const getProjectsFields = (setCurrentPage) => [
+    {
+        func : () => setCurrentPage("frontendmentor"),
+        icon : <ImHtmlFive className="mt-1" size={18} color="red"/>,
+        title : 'FrontendMentor'
+    },
     {
         func: () => setCurrentPage("project1"),
         icon: <SiReact className='mt-1' size={18} color='cyan' />,

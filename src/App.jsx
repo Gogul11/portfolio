@@ -12,6 +12,7 @@ import OnGoing from './pages/onGoing';
 import Loa from './pages/loa';
 import {IconCarouselHorizontal, IconCarouselVertical} from './components/Animation';
 import { useLocation } from 'react-router';
+import FrontendMentor from './pages/frontendMentor';
 
 function App() {
 
@@ -130,6 +131,9 @@ function App() {
 
               case pages === "ongoingProjects":
                 return <OnGoing />;
+
+              case pages === "frontendmentor":
+                return <FrontendMentor/>
 
               case pages === "loa":
                 return <Loa />;

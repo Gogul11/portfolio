@@ -50,5 +50,84 @@ const ongoingProjects = [
   },
 ];
 
+const challenges = [
+    {
+        title : 'Challenge 15 - Advice generator',
+        repoLink : 'https://github.com/Gogul11/FrontendMentor-Challenge-15',
+        siteUrl : 'https://gogul11.github.io/FrontendMentor-Challenge-15/'
+    },
+    {
+        title : 'Challenge 14 - Todo list',
+        repoLink : 'https://github.com/Gogul11/FrontendMentor-Challenge-14',
+        siteUrl : 'https://gogul11.github.io/FrontendMentor-Challenge-14/'
+    },
+    {
+        title : 'Challenge 13 - Time Tracking Dashboard',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-13',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-13/'
+    },
+    {
+        title : 'Challenge 12 - Tip calculator app',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-12',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-12/'
+    },
+    {
+        title : 'Challenge 11 - Age calculator app',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-11',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-11/'
+    },
+    {
+        title : 'Challenge 10 - Newsletter sign-up form with success message',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-10',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-10/'
+    },
+    {
+        title : 'Challenge 9 - Ping coming soon page',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-9',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-9/'
+    },
+    {
+        title : 'Challenge 8 - Four card feature section',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-8',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-8/'
+    },
+    {
+        title : 'Challenge 7 - Product preview card component',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-7',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-7/'
+    },
+    {
+        title : 'Challenge 6 - 3-column preview card component',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-6',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-6/'
+    },
+    {
+        title : 'Challenge 5 - Results summary component',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-5',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-5/'
+    },
+    {
+        title : 'Challenge 4 - Blog preview card',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-4',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-4/'
+    },
+    {
+        title : 'Challenge 3 - Interactive rating component',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-3',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-3/'
+    },
+    {
+        title : 'Challenge 2 - Frequently Asked Questions',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-2',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-2/'
+    },
+    {
+        title : 'Challenge 1 - Single price grid component',
+        repoLink : 'https://github.com/Gogul11/Frontendmentor-challenge-1',
+        siteUrl : 'https://gogul11.github.io/Frontendmentor-challenge-1/'
+    }
+]
 
-export {projectDetails, ongoingProjects};
+
+
+export {projectDetails, ongoingProjects, challenges};
