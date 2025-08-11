@@ -2,7 +2,8 @@ const achievements = [
     {
         title: "SDJ Winner",
         detail: "Secured 1st place in the Service Design Jam conducted by BNY Mellon at Kurukshetra'25.",
-        link : 'https://sdj-25.vercel.app/'
+        link : 'https://sdj-25.vercel.app/',
+        pdfUrl : '/portfolio/ecaPdf/BNY.pdf'
     },
     {
         title: "NPTEL exam",
