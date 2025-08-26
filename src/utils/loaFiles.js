@@ -1,8 +1,8 @@
 const LoaPdfFiles = [
   {
-    title: "Full Stack Development Internship",
-    desc: "Completed a virtual internship in Full Stack Web Development, gaining hands-on experience with React, Node.js, Express, and MongoDB through real-world projects.",
-    pdfUrl: "/portfolio/loaPdf/VIntern.pdf"
+    title : "Anna-Oasis Internship",
+    desc : "Internship – Anna University (May 2025 – July 2025): Developed a mobile app for international student hostel admissions and management, focusing on frontend, reusable components, and API integration and project considered for official deployment",
+    pdfUrl: "/portfolio/loaPdf/AnnaOasis.pdf"
   },
   {
     title: "Web Dev Volunteer - I++'24 & ITRix'25",
@@ -13,6 +13,11 @@ const LoaPdfFiles = [
     title: "ACM-CEG LOA",
     desc: "Certificate recognizing service as Junior and Senior Coordinator (Designate) in the Web and App domain of ACM-CEG, appreciating dedication, performance, and contributions to the club's success.",
     pdfUrl : '/portfolio/loaPdf/acm-jc-loa.pdf'
+  },
+  {
+    title: "Full Stack Development Internship",
+    desc: "Completed a virtual internship in Full Stack Web Development, gaining hands-on experience with React, Node.js, Express, and MongoDB through real-world projects.",
+    pdfUrl: "/portfolio/loaPdf/VIntern.pdf"
   },
   {
     title: "Kurukshetra'25 LOA",
