@@ -35,7 +35,7 @@ const skills = [
   { icon: <VscVscode /> },
   { icon: <SiUbuntu /> },
   { icon: <SiKalilinux /> },
-  { icon: <SiTails /> },
+  // { icon: <SiTails /> },
   { icon: <FaWindows /> },
 ];
 

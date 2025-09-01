@@ -114,10 +114,10 @@ const operatingSystems = [
     title: 'Kali Linux',
     description: 'Dual-boot setup used to explore networking tools, security utilities, and penetration testing workflows.',
   },
-  {
-    title: 'Tails OS',
-    description: 'Explored for privacy-focused and secure computing sessions.',
-  },
+  // {
+  //   title: 'Tails OS',
+  //   description: 'Explored for privacy-focused and secure computing sessions.',
+  // },
   {
     title: 'Windows',
     description: 'Initially used as the main OS for development, design tools, and general-purpose applications.',
