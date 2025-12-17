@@ -42,10 +42,10 @@ export default function ECA() {
               </button>
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  openAchievement === index ? " p-4 bg-gray-200 text-black" : "max-h-0"
+                  openAchievement === index ? " p-4 bg-white/10" : "max-h-0"
                 }`}
               >
-                <p className={`text-black font-mono text-md ${item.pdfUrl && 'mb-4'}`}>{item.detail}</p>
+                <p className={`text-white font-mono text-md ${item.pdfUrl && 'mb-4'}`}>{item.detail}</p>
                 {item.link && 
                   <div className="flex items-center gap-2 text-md underline text-blue-500">
                     <GiAnchor />
@@ -89,10 +89,10 @@ export default function ECA() {
               </button>
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  openECA === index ? "p-4 bg-gray-200 text-black" : "max-h-0"
+                  openECA === index ? "p-4 bg-white/10" : "max-h-0"
                 }`}
               >
-                <p className={`text-black ${item.pdfUrl && 'mb-4'}`}>{item.detail}</p>
+                <p className={`text-white ${item.pdfUrl && 'mb-4'}`}>{item.detail}</p>
                 {item.pdfUrl && 
                   <iframe
                     src={item.pdfUrl}

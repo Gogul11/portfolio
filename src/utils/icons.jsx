@@ -4,7 +4,7 @@ import {
   SiMongodb, SiMongoose,
   SiMongodb as SiMongoDBAtlas, SiPostman, SiDocker, SiGithub, SiVercel,
   SiFigma,
-  SiUbuntu, SiTails, SiKalilinux
+  SiUbuntu, SiTails, SiKalilinux, SiSpringboot
 } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
 
@@ -21,6 +21,7 @@ const skills = [
   { icon: <SiReact /> },
   { icon: <SiNodedotjs /> },
   { icon: <SiExpress /> },
+  { icon : <SiSpringboot/>},
   { icon: <SiTailwindcss /> },
   { icon: <SiEthers /> },
   { icon: <SiElectron /> },

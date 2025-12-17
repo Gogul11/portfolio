@@ -29,11 +29,11 @@ const Loa = () => {
               </div>
             </button>
             <div
-              className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                openIndex === index ? "max-h-[100%] p-4 bg-gray-200" : "max-h-0"
+              className={`transition-all duration-300 ease-in-out overflow-hidden text-white ${
+                openIndex === index ? "max-h-[100%] p-4 bg-white/10 " : "max-h-0"
               }`}
             >
-              <p className="text-black mb-4">{item.desc}</p>
+              <p className="mb-4">{item.desc}</p>
               {openIndex === index && (
                 <iframe
                   src={item.pdfUrl}

@@ -10,7 +10,7 @@ const FrontendMentor = () => {
             {challenges.map((challenge, index) => (
                 <div
                     key={index}
-                    className="mb-4 border border-white/10 bg-white/10 p-4 rounded-lg"
+                    className="mb-4 border border-white/10 bg-white/10 p-4 rounded-lg backdrop-blur-2xl"
                 >
                     <h3 className="text-lg font-semibold text-white mb-2">{challenge.title}</h3>
                     <div>

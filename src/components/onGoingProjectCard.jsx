@@ -5,7 +5,7 @@ const OnGoingProjectCard = ({width, title, desc}) => {
     // const width = props.width
 
     return (
-         <div className='flex flex-col bg-white/10 rounded-2xl p-4 m-4'>
+         <div className='flex flex-col bg-white/10 backdrop-blur-2xl rounded-2xl p-4 m-4'>
                 <div className='flex flex-col w-[80%]'>
                     <div>
                         <p

@@ -112,8 +112,9 @@ function App() {
                 return <ECA />;
 
               case pages.startsWith("project"): {
-                const index = parseInt(pages.replace("project", "")) - 1;
-                const project = projectDetails[index];
+                
+                const index = parseInt(pages.replace("project", ""));
+                const project = projectDetails.find(p => p.num === index);
 
                 return project ? (
                   <div className="flex justify-center items-start mt-12 mb-4 min-h-screen">

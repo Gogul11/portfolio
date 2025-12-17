@@ -1,5 +1,3 @@
-import { title } from "framer-motion/client";
-
 const programmingLanguages = [
   {
     title: 'C / C++',
@@ -14,18 +12,17 @@ const programmingLanguages = [
     description: 'Intermediate in scripting and automation. Used primarily for building APIs with FastAPI and for machine learning-related tasks.',
   },
   {
+    title: 'Java',
+    description: 'Beginner-level understanding. Currently learning the fundamentals of object-oriented programming and core Java concepts.',
+  },
+  {
     title: 'SQL (PostgreSQL)',
     description: 'Practical experience in writing SQL queries and designing database schemas, with a focus on PostgreSQL.',
   },
   {
     title: 'Solidity',
     description: 'Beginner-level understanding. Capable of writing basic smart contracts for the Ethereum blockchain.',
-  },
-  {
-    title: 'Java',
-    description: 'Beginner-level understanding. Currently learning the fundamentals of object-oriented programming and core Java concepts.',
   }
-
 ];
 
 const frameworksAndLibraries = [
@@ -50,6 +47,10 @@ const frameworksAndLibraries = [
     description: 'Intermediate knowledge of utility-first CSS for building responsive and modern UIs efficiently.',
   },
   {
+    title : 'Spring Boot',
+    description : 'Experience building RESTful APIs using Spring Boot, implementing CRUD operations with Spring MVC and Spring Data JPA, integrating relational databases.'
+  },
+  {
     title: 'Ethers.js',
     description: 'Beginner-level experience interacting with Ethereum blockchain and smart contracts through JavaScript.',
   },
@@ -72,6 +73,10 @@ const techStacks = [
     title: 'PERN Stack',
     description: 'PostgreSQL, Express.js, React.js, and Node.js used for relational full-stack applications.',
   },
+  {
+    title : 'Spring Boot Stack',
+    description : 'Spring Boot, PostgreSQL, and REST APIs used for building backend services with Java and relational databases.'
+  }
 ];
 
 const toolsAndPlatforms = [

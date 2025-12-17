@@ -4,6 +4,7 @@ import { FaDatabase } from "react-icons/fa";
 import { BsStack } from "react-icons/bs";
 import { SiReact } from "react-icons/si";
 import { ImHtmlFive } from "react-icons/im";
+import { RiLandscapeLine } from "react-icons/ri";
 
 const getProjectsFields = (setCurrentPage) => [
     {
@@ -12,27 +13,32 @@ const getProjectsFields = (setCurrentPage) => [
         title : 'FrontendMentor'
     },
     {
-        func: () => setCurrentPage("project1"),
+        func: () => setCurrentPage("project5"),
         icon: <SiReact className='mt-1' size={18} color='cyan' />,
         title: 'Portfolio'
     },
     {
-        func: () => setCurrentPage("project2"),
+        func: () => setCurrentPage("project3"),
         icon: <VscTerminalDebian className='mt-1' size={18} color='red' />,
         title: 'Exitor'
     },
     {
-        func: () => setCurrentPage("project3"),
+        func: () => setCurrentPage("project6"),
+        icon: <RiLandscapeLine className='mt-1' size={18} color='green' />,
+        title: 'Oriyam'
+    },
+    {
+        func: () => setCurrentPage("project4"),
         icon: <FaGitAlt className='mt-1' size={18} color='red' />,
         title: 'Git Simulator'
     },
     {
-        func: () => setCurrentPage("project4"),
+        func: () => setCurrentPage("project2"),
         icon: <FaDatabase className='mt-1' size={18} color='gray' />,
         title: 'SpareParts Management System'
     },
     {
-        func: () => setCurrentPage("project5"),
+        func: () => setCurrentPage("project1"),
         icon: <BsStack className='mt-1' size={18} color='green' />,
         title: 'SuperMarket Billing System'
     }
