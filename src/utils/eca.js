@@ -21,16 +21,16 @@ const achievements = [
 const extraCurriculars = [
     {
         title: "ACM Coordinator",
-        detail: "Junior Coordinator for Web & app domain at ACM CEG Chapter (2024-2025).",
+        detail: "Senior Coordinator for Web development domain at ACM CEG Chapter (present).",
     },
     {
-        title: "TechOps Coordinator",
-        detail: "Tech-ops Coordinator at CEG Tech Forum (2024-2025).",
-        pdfUrl : '/portfolio/ecaPdf/ctfAppointment.pdf'
+        title: "Projects and Research Organizer",
+        detail: "Projects and Research Organizer at CEG Tech Forum (present).",
+        // pdfUrl : '/portfolio/ecaPdf/ctfAppointment.pdf'
     },
     {
         title: "Technical Team POC",
-        detail: "Served as the point of contact for Technical Team 3 at CEG Tech Forum, overseeing the development and coordination of the college application project.",
+        detail: "Served as the point of contact for Technical Team 3 at CEG Tech Forum (2024-2025), overseeing the development and coordination of the college application project.",
     },
     {
         title: "NSS Volunteer",
