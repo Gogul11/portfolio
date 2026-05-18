@@ -5,12 +5,24 @@ import { BsStack } from "react-icons/bs";
 import { SiReact } from "react-icons/si";
 import { ImHtmlFive } from "react-icons/im";
 import { RiLandscapeLine } from "react-icons/ri";
+import { IoDesktopSharp } from "react-icons/io5";
+import { MdShoppingCart } from "react-icons/md";
 
 const getProjectsFields = (setCurrentPage) => [
     {
         func : () => setCurrentPage("frontendmentor"),
         icon : <ImHtmlFive className="mt-1" size={18} color="red"/>,
         title : 'FrontendMentor'
+    },
+    {
+        func: () => setCurrentPage("project8"),
+        icon: <MdShoppingCart className='mt-1' size={18} color='red' />,
+        title: 'Lew'
+    },
+    {
+        func: () => setCurrentPage("project7"),
+        icon: <IoDesktopSharp className='mt-1' size={18} color='pink' />,
+        title: 'Orca'
     },
     {
         func: () => setCurrentPage("project5"),
