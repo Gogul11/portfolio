@@ -10,7 +10,7 @@ const AboutMe = () => {
             {/* Top */}
             <div className='flex gap-16 flex-wrap max-md:justify-center'>
                 {/* //Image part */}
-                <div
+                {/* <div
                     className="relative group w-fit flex max-md:justify-center
                             rounded-full
                             drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]"
@@ -49,14 +49,14 @@ const AboutMe = () => {
                             <IoMdMail size={32} color='#ffff00'/>
                         </a>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Thirukural */}
-                <div className='flex flex-col gap-2 justify-center items-center text-wrap
+                {/* <div className='flex flex-col gap-2 justify-center items-center text-wrap
                                 text-md lg:text-xl md:text-lg'>
                    <span className='tamil font-bold'>" வினைவலியும் தன்வலியும் மாற்றான் வலியும்</span>   
                    <span className='tamil font-bold'>துணைவலியும் தூக்கிச் செயல் ! "</span>
-                </div>
+                </div> */}
             </div>
 
             {/* //Intro part */}
