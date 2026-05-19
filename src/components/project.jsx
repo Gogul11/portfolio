@@ -8,17 +8,9 @@ const Project = (props) => {
         <div
             className='bg-white/10 backdrop-blur-2xl drop-shadow-xl drop-shadow-white/10 w-[90%] rounded-2xl p-4 flex flex-col justify-center items-center lg:w-[60%] md:w-[70%]  md:p-6 ani'
         >
-            {/* image */}
-            <div className="w-full flex justify-center">                
-                <img
-                    className='rounded-2xl m-2 md:m-4 h-[250px] w-[250px] md:h-[300px] md:w-[400px]' 
-                    src={props.path} 
-                    alt={`${props.title} image`} />
-            </div>
-
             {/* content */}
             <div className='flex flex-col'>
-                <p className='text-2xl text-green-600 underline font-semibold m-2'>{props.title}</p>
+                <p className='text-2xl text-indigo-200 underline font-semibold m-2'>{props.title}</p>
                 <div className='flex items-center text-blue-600 hover:cursor-pointer w-fit'>
                     <LuExternalLink />
                     <a

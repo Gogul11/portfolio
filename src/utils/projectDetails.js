@@ -231,25 +231,92 @@ const projectDetails = [
                 <li>Clean separation of mobile, admin, and backend services</li>
               </ol>
             `
-}
+  },
+  {
+    num : 7,
+    title : 'ORCA - LAN Based Lab Assessment IDE',
+    path : '/portfolio/projectsImg/orca.jpeg',
+    repoLink : 'https://github.com/Gogul11/ORCA',
+    content :`
+              <p>
+                ORCA is a cross-platform <span class="text-blue-500">LAN-based desktop IDE</span> 
+                designed for conducting offline lab assessments inside educational institutions. 
+                It enables teachers to host assessment rooms, collect student project directories, 
+                evaluate submissions, share resources, and communicate in real-time without requiring internet access.
+              </p>
+
+              <h3 class="underline font-semibold m-2 text-blue-500">Key Features</h3>
+              <ol class="list-disc list-inside">
+                <li><span class="text-blue-500">Teachers:</span> Host LAN assessment rooms, receive project submissions, evaluate student work, assign marks, and upload reference materials</li>
+                <li><span class="text-blue-500">Students:</span> Join rooms over LAN, develop projects directly inside the IDE, submit complete project directories, and access shared resources</li>
+                <li><span class="text-blue-500">Communication:</span> Real-time LAN-based chat system for student interactions and announcements</li>
+              </ol>
+
+              <h3 class="underline font-semibold m-2 text-blue-500">Tech Stack</h3>
+              <ol class="list-disc list-inside">
+                <li><span class="text-blue-500">Frontend:</span> React + TypeScript</li>
+                <li><span class="text-blue-500">Desktop Framework:</span> Electron.js</li>
+                <li><span class="text-blue-500">Backend:</span> Node.js</li>
+                <li><span class="text-blue-500">Networking:</span> WebSockets over Local Area Network (LAN)</li>
+                <li><span class="text-blue-500">File Transfer:</span> Local network directory streaming</li>
+              </ol>
+
+              <h3 class="underline font-semibold m-2 text-blue-500">Highlights</h3>
+              <ol class="list-disc list-inside">
+                <li>Fully offline assessment workflow with <span class="text-blue-500">no cloud dependency</span></li>
+                <li>Cross-platform support for <span class="text-blue-500">Windows, Linux, and macOS</span></li>
+                <li>Directory-based project submission and evaluation system</li>
+                <li>Integrated IDE, chat, file sharing, and assessment management in a single application</li>
+              </ol>
+            `
+  },
+  {
+    num : 8,
+    title : 'LEW - BLE Based User-Following Bot',
+    path : '/portfolio/projectsImg/lew.jpeg',
+    repoLink : 'https://github.com/Gogul11/Lew-bot',
+    content :`
+              <p>
+                LEW is a full-stack <span class="text-blue-500">BLE-based smart follower robot</span> 
+                built using an ESP32, React Native mobile app, and Node.js backend. 
+                The system allows users to authenticate, book, pair, and control a mobile bot that follows them 
+                dynamically using <span class="text-blue-500">Bluetooth Low Energy (BLE) RSSI signal strength</span>.
+              </p>
+
+              <h3 class="underline font-semibold m-2 text-blue-500">Key Features</h3>
+              <ol class="list-disc list-inside">
+                <li><span class="text-blue-500">Mobile App:</span> User authentication, QR-based bot selection, BLE pairing, booking flow, and bot control</li>
+                <li><span class="text-blue-500">Backend:</span> Bot booking, verification, token generation, and user management using REST APIs</li>
+                <li><span class="text-blue-500">Embedded System:</span> ESP32 firmware with BLE + Wi-Fi communication and RSSI-based motor control</li>
+                <li><span class="text-blue-500">Smart Following:</span> Dynamic motor speed adjustment based on BLE signal strength to maintain user distance</li>
+              </ol>
+
+              <h3 class="underline font-semibold m-2 text-blue-500">Tech Stack</h3>
+              <ol class="list-disc list-inside">
+                <li><span class="text-blue-500">Mobile App:</span> React Native (Expo) + TypeScript</li>
+                <li><span class="text-blue-500">Backend:</span> Node.js + Express + MongoDB</li>
+                <li><span class="text-blue-500">Embedded Firmware:</span> ESP32 Arduino Framework + PlatformIO</li>
+                <li><span class="text-blue-500">Communication:</span> BLE + Wi-Fi</li>
+                <li><span class="text-blue-500">Hardware:</span> ESP32, L298N Motor Driver, Dual DC Motors</li>
+              </ol>
+
+              <h3 class="underline font-semibold m-2 text-blue-500">Highlights</h3>
+              <ol class="list-disc list-inside">
+                <li>BLE RSSI-based user-following logic with real-time motor speed mapping</li>
+                <li>QR-code based bot identification and secure backend verification flow</li>
+                <li>Dual control implementations with <span class="text-blue-500">manual</span> and <span class="text-blue-500">accelerometer-based</span> modes</li>
+                <li>Integrated full-stack architecture combining <span class="text-blue-500">mobile, backend, and embedded systems</span></li>
+              </ol>
+            `
+  }
 ];
 
 const ongoingProjects = [
-  {
-    title: 'Orca',
-    desc: 'Collabrative IDE for lab exams. About to be deployed',
-    width: 85,
-  },
-  {
-    title: 'Cloth Store',
-    desc: 'A small e-commerce site for selling cloths aimed for small scale business',
-    width: 50,
-  },
-  {
-    title : 'Stdent understanding analysis system',
-    desc : 'A system to analyse students understanding level based on their subjects using NLP techniques and about to be implemented',
-    width : 5,
-  }
+  // {
+  //   title: 'Cloth Store',
+  //   desc: 'A small e-commerce site for selling cloths aimed for small scale business',
+  //   width: 50,
+  // },
 ];
 
 const challenges = [

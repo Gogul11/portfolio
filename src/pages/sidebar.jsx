@@ -19,8 +19,8 @@ const Sidebar = ({setCurrentPage}) => {
 
     return (
         <div 
-            className='bg-gray-900/50 w-[70%] md:h-[95vh] flex flex-col py-4 md:w-[250px] lg:w-[350px]
-                        rounded-[20px] ml-4 border-1 border-gray-600 ani max-md:overflow-auto max-md:max-h-[500px] scrollbar-none overflow-auto'>
+            className='bg-gray-900/50 w-[70%] md:h-[98vh] flex flex-col py-4 md:w-[250px] lg:w-[350px]
+                        rounded-[10px] ml-4 border-1 border-gray-600 ani max-md:overflow-auto max-md:max-h-[500px] scrollbar-none overflow-auto'>
 
             
             {fields.map((item, index) => (
