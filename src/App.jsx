@@ -13,6 +13,7 @@ import Loa from './pages/loa';
 import {IconCarouselHorizontal, IconCarouselVertical} from './components/Animation';
 import { useLocation } from 'react-router';
 import FrontendMentor from './pages/frontendMentor';
+import ExperienceTimeline from './pages/experience';
 
 function App() {
 
@@ -144,6 +145,9 @@ function App() {
 
               case pages === "resume":
                 return <Resume />;
+              
+              case pages === "experience":
+                return <ExperienceTimeline/>
 
               default:
                 return null;

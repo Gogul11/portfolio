@@ -6,7 +6,7 @@ import { FaDocker } from "react-icons/fa";
 import { SiEthereum } from "react-icons/si";
 import { SiSolidity } from "react-icons/si";
 import OngoingAnimation from "../components/ongoingAnimation";
-
+import { PiFileSql } from "react-icons/pi";
 
 const getFields = (setCurrentPage) => [
     {
@@ -18,6 +18,11 @@ const getFields = (setCurrentPage) => [
         func : () => setCurrentPage("skills"),
         icon : <PiHash color='#2997e6' size={30} />,
         title : 'skills.css'
+    },
+    {
+        func : () => setCurrentPage("experience"),
+        icon : <PiFileSql color='#dd29e6' size={30} />,
+        title : 'exp.sql'
     },
     {
         func : () => setCurrentPage("eca"),
