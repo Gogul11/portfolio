@@ -312,11 +312,11 @@ const projectDetails = [
 ];
 
 const ongoingProjects = [
-  // {
-  //   title: 'Cloth Store',
-  //   desc: 'A small e-commerce site for selling cloths aimed for small scale business',
-  //   width: 50,
-  // },
+  {
+    title: 'PROJECT L',
+    desc: 'A personalized AI-AGENT using SLM and improved using RAG',
+    width: 40,
+  },
 ];
 
 const challenges = [

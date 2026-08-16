@@ -21,7 +21,7 @@ const Contact = () => {
               href={href}
               target="_blank"
               rel="noreferrer"
-              className="w-[90%] max-w-md bg-gunmetal/30 border-x border-b border-crayol text-white rounded-xl p-5 shadow-md hover:scale-[1.02] transition-transform duration-300"
+              className="w-[90%] max-w-md bg-gunmetal/30 border-r border-b border-black shadow-[8px_8px_0px_#000] rotate-1 text-white rounded-xl p-5  hover:scale-[1.02] transition-transform duration-300"
             >
               <div className="flex items-center gap-3">
                 <LuLink className="text-crayol transform rotate-[270deg]" size={24} />
