@@ -6,26 +6,30 @@ import { GiAnchor } from "react-icons/gi";
 const Project = (props) => {
     return (
         <div
-            className='bg-white/10 backdrop-blur-2xl drop-shadow-xl drop-shadow-white/10 w-[90%] rounded-2xl p-4 flex flex-col justify-center items-center lg:w-[60%] md:w-[70%]  md:p-6 ani'
+            className='bg-gunmetal/30 backdrop-blur-2xl  border-r border-b border-black shadow-[8px_8px_0px_#000] w-[90%] rounded-2xl p-4 flex flex-col justify-center items-center lg:w-[60%] md:w-[70%]  md:p-6 ani'
         >
             {/* content */}
-            <div className='flex flex-col'>
-                <p className='text-2xl text-indigo-200 underline font-semibold m-2'>{props.title}</p>
-                <div className='flex items-center text-blue-600 hover:cursor-pointer w-fit'>
+            <div className='flex flex-col ite'>
+                <div className="mb-8 flex items-center gap-3 px-4 md:px-10">
+                  <span className="bg-crayol text-gunmetal border-2 border-black px-4 py-2 font-heading font-black shadow-[4px_4px_0px_#000] -rotate-1 text-2xl ">
+                    {props.title}
+                  </span>
+                </div>
+                <div className='flex items-center text-crayol hover:cursor-pointer w-fit'>
                     <LuExternalLink />
                     <a
                         href={props.repolink}
                         target='_blank'
-                        className='m-2 text-blue-600'
+                        className='m-2 text-crayol'
                     >Repo link</a>
                 </div>
                 {props.liveurl &&
-                    <div className='flex items-center w-fit text-blue-600 hover:cursor-pointer'>
+                    <div className='flex items-center w-fit text-crayol hover:cursor-pointer'>
                         <GiAnchor />
                         <a
                         href={props.liveurl}
                         target='_blank'
-                        className='m-2 text-blue-600'
+                        className='m-2 text-crayol'
                         >Visit</a>
                     </div>
                 }

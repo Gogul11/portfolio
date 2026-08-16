@@ -11,37 +11,37 @@ import { PiFileSql } from "react-icons/pi";
 const getFields = (setCurrentPage) => [
     {
         func : () => setCurrentPage("aboutMe"),
-        icon : <FaDocker color='#059df5' size={30}/>,
+        icon : <FaDocker color='#ED254E' size={30}/>,
         title : 'aboutMe.docker'
     },
     {
         func : () => setCurrentPage("skills"),
-        icon : <PiHash color='#2997e6' size={30} />,
+        icon : <PiHash color='#ED254E' size={30} />,
         title : 'skills.css'
     },
     {
         func : () => setCurrentPage("experience"),
-        icon : <PiFileSql color='#dd29e6' size={30} />,
+        icon : <PiFileSql color='#ED254E' size={30} />,
         title : 'exp.sql'
     },
     {
         func : () => setCurrentPage("eca"),
-        icon : <RiReactjsFill color='#2997e6' size={30} />,
+        icon : <RiReactjsFill color='#ED254E' size={30} />,
         title : 'ECA.jsx'
     },
     {
         func : () => setCurrentPage("contact"),
-        icon : <SiSolidity color='#e4e1f2' size={30} />,
+        icon : <SiSolidity color='#ED254E' size={30} />,
         title : 'Contact.sol'
     },
     {
         func : () => setCurrentPage("resume"),
-        icon : <FaFilePdf color='red' size={28}/>,
+        icon : <FaFilePdf color='#ED254E' size={28}/>,
         title : 'Resume.pdf'
     },
     {
         func : () => setCurrentPage("loa"),
-        icon : <SiEthereum  size={30} color="gray"/>,
+        icon : <SiEthereum  size={30} color="#ED254E"/>,
         title : 'Letter of Appreciations'
     },
     {

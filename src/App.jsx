@@ -70,9 +70,9 @@ function App() {
           <>
 
             {side && (
-              <div className="fixed inset-0 z-20 backdrop-blur-sm bg-black/30 transition duration-300"></div>
+              <div className="fixed inset-0 z-20 backdrop-blur-sm bg-gunmetal/30 transition duration-300"></div>
             )}
-            <div className='fixed top-[50%]  z-40 text-white bg-indigo-700 rounded-2xl ml-2'>
+            <div className='fixed top-[50%]  z-40 text-gunmetal bg-crayol rounded-2xl ml-2'>
               <RiExpandLeftRightFill 
                 size='30' 
                 onClick={() => setSide(!side)}
