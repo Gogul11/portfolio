@@ -5,7 +5,7 @@ const OnGoingProjectCard = ({width, title, desc}) => {
     // const width = props.width
 
     return (
-         <div className='flex flex-col bg-gunmetal/30 backdrop-blur-2xl rounded-2xl p-4 m-4 border-r border-b border-black shadow-[8px_8px_0px_#000]'>
+         <div className='flex flex-col bg-gunmetal/30 backdrop-blur-2xl hover:-rotate-2 rounded-2xl p-4 m-4 border-r border-b border-black shadow-[8px_8px_0px_#000]'>
                 <div className='flex flex-col w-[80%]'>
                     <div>
                         <p

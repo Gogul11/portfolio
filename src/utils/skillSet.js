@@ -35,16 +35,16 @@ const frameworksAndLibraries = [
     description: 'Intermediate level with both JavaScript and TypeScript. Built cross-platform mobile apps using Expo.',
   },
   {
-    title: 'Node.js',
-    description: 'Intermediate proficiency in writing backend services and handling server-side logic with JavaScript.',
-  },
-  {
     title: 'Express.js',
     description: 'Intermediate experience building RESTful APIs with middleware support and route management in JavaScript.',
   },
   {
     title: 'Tailwind CSS',
     description: 'Intermediate knowledge of utility-first CSS for building responsive and modern UIs efficiently.',
+  },
+  {
+    title : 'FastAPI',
+    description : 'Experience building RESTful APIs using FastAPI, implementing CRUD operations with backend AI applications'
   },
   {
     title : 'Spring Boot',

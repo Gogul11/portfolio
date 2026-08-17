@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillSection = ({ title, items }) => {
   return (
-    <div className="mb-10 bg-gunmetal/30 p-4 rounded-2xl border-r border-b border-black shadow-[8px_8px_0px_#000]">
+    <div className="mb-10 bg-gunmetal/30 backdrop-blur-lg p-4 rounded-2xl border-r border-b border-black shadow-[8px_8px_0px_#000]">
       <h2 className="text-xl md:text-2xl font-bold mb-4 text-crayol">
         {title}
       </h2>

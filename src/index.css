@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Mega:wght@100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -10,6 +11,7 @@
 
 *{
   font-family: "JetBrains Mono", monospace;
+    /*font-family: "Lexend Mega", sans-serif;*/
   box-sizing: border-box;
 }
 /*
@@ -18,7 +20,7 @@ body{
   color: white;
 }*/
 
-body {
+/*body {
   background: radial-gradient(
     circle at 0% 0%,
     #ED254E 0%,
@@ -27,6 +29,17 @@ body {
   );
   color: white;
   animation: pulseBackground 5s ease-in-out infinite;
+}*/
+
+body {
+    background-color: #002A32;
+
+    background-image:
+        linear-gradient(rgba(237, 37, 78, 0.20) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(237, 37, 78, 0.20) 1px, transparent 1px);
+    color: white;
+
+    background-size: 40px 40px;
 }
 
 @keyframes pulseBackground {
@@ -175,7 +188,7 @@ body {
   width: max-content;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   body {
     background: radial-gradient(circle at 80% 80%, #ED254E 0%, #002A32 60%, #002A32 100%);
     animation: pulseBackground2 5s ease-in-out infinite;
@@ -190,4 +203,4 @@ body {
       background-size: 150% 150%;
     }
   }
-}
+}*/

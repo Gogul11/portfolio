@@ -4,8 +4,9 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import getFields from '../utils/fields';
 import getProjectFields from '../utils/projectFields'
 import SideBarFields from '../components/sideBarField';
+import { Link } from 'react-router';
 
-const Sidebar = ({setCurrentPage}) => {
+const Sidebar = ({setSide}) => {
 
     const[projects, setProjects] = useState(false)
     const[showProjects, setShowProjects] = useState(false)
@@ -14,12 +15,12 @@ const Sidebar = ({setCurrentPage}) => {
     const sideBarContentStyles = 'flex w-[100%] focus:bg-white/20 hover:bg-white/10 cursor-pointer p-2'
     const projectStyles = 'flex w-[100%] pl-8 focus:bg-white/20 py-2 hover:bg-white/10 cursor-pointer'
 
-    const fields = getFields(setCurrentPage)
-    const projectFields = getProjectFields(setCurrentPage)
+    const fields = getFields()
+    const projectFields = getProjectFields()
 
     return (
         <div 
-            className='bg-gunmetal/30 w-[70%] md:h-[96vh] flex flex-col py-4 md:w-[250px] lg:w-[350px]
+            className='bg-gunmeta/10 backdrop-blur-lg w-[70%] md:h-[96vh] flex flex-col py-4 md:w-[250px] lg:w-[350px]
                         rounded-[10px] ml-4 ani max-md:overflow-auto max-md:max-h-[500px] scrollbar-none overflow-auto
                         border-r border-b border-black shadow-[8px_8px_0px_#000] rotate-1
                         '>
@@ -29,15 +30,16 @@ const Sidebar = ({setCurrentPage}) => {
                 <SideBarFields
                     key={index} 
                     className={sideBarContentStyles}
-                    onClickFunc={item.func}
+                    path={item.path}
                     icon={item.icon}
+                    func={setSide}
                     content={item.title}
                 />
             ))}
             
         
             {/*Projects*/}
-            <button 
+            <button
                 onClick={() => {
                     setShowProjects(!showProjects)
                     setTimeout(() => setProjects(!projects), 500)
@@ -65,10 +67,10 @@ const Sidebar = ({setCurrentPage}) => {
                         <ul className='text-white flex flex-col gap-2 '>
                             {projectFields.map((item, index) => (
                                 <li key={index}>
-                                    <button className={projectStyles} onClick={item.func}>
+                                    <Link className={projectStyles} to={item.path} onClick={setSide}>
                                         {item.icon}
                                         <p className='ml-2 text-left'>{item.title}</p>
-                                    </button>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

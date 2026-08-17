@@ -29,10 +29,11 @@ const AboutMe = () => {
           <div className="flex items-center">
             <p className="text-2xl text-white lg:text-4xl">
               <span className="hi">👋</span> Hi I am{" "}
-              <span className="font-heading text-crayol">Gogul</span>,
+              <span className="bg-crayol text-gunmetal border-2 border-black px-4 py-2 font-heading font-black shadow-[4px_4px_0px_#000] -rotate-2 ">
+              Gogul</span>,
             </p>
 
-            <p className="blink ml-1 text-3xl text-white">|</p>
+            {/* <p className="blink ml-1 text-3xl text-white">|</p>*/}
           </div>
 
           <div className="mt-6">

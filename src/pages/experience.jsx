@@ -37,6 +37,8 @@ export default function ExperienceTimeline() {
                     p-4 sm:p-6
                     transition-all duration-500
                     hover:translate-x-1 sm:hover:translate-x-2
+                    
+                    hover:-rotate-1
                     hover:bg-gunmetal/30
                   "
                 >

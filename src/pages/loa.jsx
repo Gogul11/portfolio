@@ -21,17 +21,17 @@ const Loa = () => {
 
       <div className="w-full max-w-4xl mx-auto mt-10 p-4 font-mono text-sm ani">
         
-        <div className="space-y-4">
+        <div className="space-y-8">
           {LoaPdfFiles.map((item, index) => (
-            <div key={index} className="bg-gunmetal/30  border-r border-b border-black shadow-[8px_8px_0px_#000] rounded-lg overflow-hidden">
+            <div key={index} className="bg-gunmetal/30 backdrop-blur-lg hover:-rotate-1  border-r border-b border-black shadow-[8px_8px_0px_#000] rounded-lg overflow-hidden">
               <button
                 onClick={() => togglePdf(index)}
                 className="w-full px-4 py-3 text-left text-white font-medium text-base cursor-pointer"
               >
                 <div className='flex items-center gap-2'>
                   {openIndex !== index ? 
-                    <MdOutlineKeyboardDoubleArrowDown size={20}/> : 
-                    <MdKeyboardDoubleArrowUp size={20}/>
+                    <MdOutlineKeyboardDoubleArrowDown color={'#ED254E'}  size={20}/> : 
+                    <MdKeyboardDoubleArrowUp  color={'#ED254E'} size={20}/>
                   }
                   {item.title}
                 </div>

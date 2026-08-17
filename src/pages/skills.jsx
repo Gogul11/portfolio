@@ -54,9 +54,9 @@ const Skills = () => {
                 <button
                     key={section.id}
                     onClick={() => setActiveSection(section)}
-                    className={`px-2 py-1 rounded-full border border-gray-100/40 text-md font-medium transition-all cursor-pointer hover:bg-black/50
-                        ${activeSection.id === section.id && 'text-crayol bg-black/20 border-crayol'}`}
-                            >
+                    className={`px-2 py-1 rounded-full border-r border-b border-black shadow-[4px_4px_0px_#000] rotate-1 hover:-rotate-1 text-md font-medium transition-all cursor-pointer hover:bg-crayol
+                        ${activeSection.id === section.id && 'bg-crayol border-crayol'}`}
+                >
                     {section.title}
                 </button>
             </div>

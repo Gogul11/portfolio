@@ -17,7 +17,7 @@ const FrontendMentor = () => {
             {challenges.map((challenge, index) => (
                 <div
                     key={index}
-                    className="mb-4  border-r border-b border-black shadow-[8px_8px_0px_#000] bg-gunmetal/30 p-4 rounded-lg backdrop-blur-2xl"
+                    className="mb-8 border-r border-b border-black shadow-[8px_8px_0px_#000] bg-gunmetal/30 p-4 rounded-lg backdrop-blur-2xl hover:-rotate-1"
                 >
                     <h3 className="text-xl font-semibold text-white mb-2">{challenge.title}</h3>
                     <div className='w-full flex flex-col gap-1 items-end'>

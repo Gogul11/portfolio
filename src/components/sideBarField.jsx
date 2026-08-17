@@ -1,16 +1,18 @@
+import { Link } from "react-router"
 
-const SideBarFields = ({className, onClickFunc, icon, content}) => {
+const SideBarFields = ({className, func, path, icon, content}) => {
     return(
         <div>
-            <button
-                className={className}
-                onClick={onClickFunc}
+            <Link
+              className={className}
+              to={path}
+              onClick={func}
             >
                 {icon}
                 <p
                     className='ml-8 text-white'
                 >{content}</p>
-            </button>
+            </Link>
         </div>
     )
 }
