@@ -8,47 +8,46 @@ import { SiSolidity } from "react-icons/si";
 import OngoingAnimation from "../components/ongoingAnimation";
 import { PiFileSql } from "react-icons/pi";
 
-const getFields = (setCurrentPage) => [
-    {
-        func : () => setCurrentPage("aboutMe"),
-        icon : <FaDocker color='#059df5' size={30}/>,
-        title : 'aboutMe.docker'
-    },
-    {
-        func : () => setCurrentPage("skills"),
-        icon : <PiHash color='#2997e6' size={30} />,
-        title : 'skills.css'
-    },
-    {
-        func : () => setCurrentPage("experience"),
-        icon : <PiFileSql color='#dd29e6' size={30} />,
-        title : 'exp.sql'
-    },
-    {
-        func : () => setCurrentPage("eca"),
-        icon : <RiReactjsFill color='#2997e6' size={30} />,
-        title : 'ECA.jsx'
-    },
-    {
-        func : () => setCurrentPage("contact"),
-        icon : <SiSolidity color='#e4e1f2' size={30} />,
-        title : 'Contact.sol'
-    },
-    {
-        func : () => setCurrentPage("resume"),
-        icon : <FaFilePdf color='red' size={28}/>,
-        title : 'Resume.pdf'
-    },
-    {
-        func : () => setCurrentPage("loa"),
-        icon : <SiEthereum  size={30} color="gray"/>,
-        title : 'Letter of Appreciations'
-    },
-    {
-        func : () => setCurrentPage("ongoingProjects"),
-        icon : <OngoingAnimation/>,
-        title : 'Ongoing Projects'
-    }
-]
-
+const getFields = () => [
+  {
+    path: "/portfolio/",
+    icon: <FaDocker color="#ED254E" size={30} />,
+    title: "aboutMe.docker",
+  },
+  {
+    path: "/portfolio/skills",
+    icon: <PiHash color="#ED254E" size={30} />,
+    title: "skills.css",
+  },
+  {
+    path: "/portfolio/experience",
+    icon: <PiFileSql color="#ED254E" size={30} />,
+    title: "exp.sql",
+  },
+  {
+    path: "/portfolio/eca",
+    icon: <RiReactjsFill color="#ED254E" size={30} />,
+    title: "ECA.jsx",
+  },
+  {
+    path: "/portfolio/contact",
+    icon: <SiSolidity color="#ED254E" size={30} />,
+    title: "Contact.sol",
+  },
+  {
+    path: "/portfolio/resume",
+    icon: <FaFilePdf color="#ED254E" size={28} />,
+    title: "Resume.pdf",
+  },
+  {
+    path: "/portfolio/loa",
+    icon: <SiEthereum size={30} color="#ED254E" />,
+    title: "Letter of Appreciations",
+  },
+  {
+    path: "/portfolio/ongoingProjects",
+    icon: <OngoingAnimation />,
+    title: "Ongoing Projects",
+  },
+];
 export default getFields;

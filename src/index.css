@@ -1,16 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Mega:wght@100..900&display=swap');
+
 @import "tailwindcss";
 
+@theme {
+  --color-crayol: #ED254E;
+  --color-gunmetal: #002A32;
+}
 
 *{
   font-family: "JetBrains Mono", monospace;
+    /*font-family: "Lexend Mega", sans-serif;*/
   box-sizing: border-box;
 }
-
+/*
 body{
-  background: radial-gradient(circle at 20% 20%, #312c85 0%, black 40%, black 100%);
+  background: radial-gradient(circle at 20% 20%, #ED254E 0%, #002A32 40%, #002A32 100%);
   color: white;
+}*/
+
+/*body {
+  background: radial-gradient(
+    circle at 0% 0%,
+    #ED254E 0%,
+    #002A32 40%,
+    #002A32 100%
+  );
+  color: white;
+  animation: pulseBackground 5s ease-in-out infinite;
+}*/
+
+body {
+    background-color: #002A32;
+
+    background-image:
+        linear-gradient(rgba(237, 37, 78, 0.20) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(237, 37, 78, 0.20) 1px, transparent 1px);
+    color: white;
+
+    background-size: 40px 40px;
+}
+
+@keyframes pulseBackground {
+  0%, 100% {
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-size: 250% 250%;
+  }
 }
 
 .tamil{
@@ -111,12 +150,12 @@ body{
 @keyframes growAndShrink {
   0%, 100% {
     transform: scale(0.5);
-    box-shadow: 0 0 0 rgba(255, 255, 0, 0.7);
+    box-shadow: 0 0 0 #ED254E;
 
   }
   50% {
     transform: scale(0.8);
-    box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.8);
+    box-shadow: 0 0 10px 5px #ED254E;
 
   }
 }
@@ -149,8 +188,19 @@ body{
   width: max-content;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   body {
-    background: radial-gradient(circle at 80% 80%, #312c85 0%, black 40%, black 100%);
+    background: radial-gradient(circle at 80% 80%, #ED254E 0%, #002A32 60%, #002A32 100%);
+    animation: pulseBackground2 5s ease-in-out infinite;
   }
-}
+
+  @keyframes pulseBackground2 {
+    0%, 100% {
+      background-size: 100% 100%;
+    }
+  
+    50% {
+      background-size: 150% 150%;
+    }
+  }
+}*/
